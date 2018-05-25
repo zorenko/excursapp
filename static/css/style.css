@@ -1,3 +1,43 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&subset=cyrillic");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header a {
+  color: #000; }
+
+.header li {
+  list-style: none;
+  display: inline-block; }
+
+.header__logo {
+  display: block;
+  float: left;
+  font-weight: 700;
+  font-size: 18px; }
+
+.header__nav {
+  float: right; }
+  .header__nav a {
+    font-weight: 500;
+    font-size: 14px; }

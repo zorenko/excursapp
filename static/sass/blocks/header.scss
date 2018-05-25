@@ -1,0 +1,27 @@
+.header {
+  a {
+    color: $black;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+
+  &__logo {
+    display: block;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__nav {
+    float: right;
+
+    a {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
