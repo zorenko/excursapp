@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
-    <header class="header clearfix">
+    <header class="header container clearfix">
       <a href="#" class="header__logo">excursapp</a>
       <ul class="header__nav">
         <li><a href="#">Контакты</a></li>
@@ -15,58 +15,60 @@
       </ul>
     </header>
 
-    <section class="cta clearfix">
-      <h1>Простой способ найти гида и забронировать экскурсию</h1>
+    <section class="cta container clearfix">
+      <h1 class="cta__title">Простой способ найти гида и забронировать экскурсию</h1>
       <div class="cta__email">
-        <input type="text" name="" value="" placeholder="E-mail">
-        <button type="button" name="button">Узнать о запуске</button>
-        <p>Приложение в разработке. Оставь e-mail, чтобы узнать о запуске. Спамить не будем.</p>
+        <div class="cta__input clearfix">
+          <input type="text" name="" value="" placeholder="E-mail">
+          <button type="button" name="button">Узнать о запуске</button>
+        </div>
+        <p>Приложение в разработке.<br> Оставь e-mail, чтобы узнать о запуске. Спамить не будем.</p>
       </div>
     </section>
 
-    <section class="promo clearfix">
-      <h3>Найди тур, который подходит именно тебе</h3>
+    <section class="content content--promo clearfix">
+      <h3 class="content__title container">Найди тур, который подходит именно тебе</h3>
 
-      <div class="promo__row">
-        <div class="promo__tour">
+      <div class="content__row clearfix">
+        <div class="content__tour">
           <h4>Индивидуальные туры</h4>
         </div>
-        <div class="promo__tour">
+        <div class="content__tour">
           <h4>Авторские экскурсии</h4>
         </div>
-        <div class="promo__tour">
+        <div class="content__tour">
           <h4>Туры на автомобиле</h4>
         </div>
-        <div class="promo__tour">
+        <div class="content__tour">
           <h4>Обзорные экскурсии</h4>
         </div>
       </div>
 
-      <div class="promo__row">
-        <div class="promo__tour">
+      <div class="content__row clearfix">
+        <div class="content__tour">
           <h4>Индивидуальные туры</h4>
         </div>
-        <div class="promo__tour">
+        <div class="content__tour">
           <h4>Авторские экскурсии</h4>
         </div>
-        <div class="promo__tour">
+        <div class="content__tour">
           <h4>Туры на автомобиле</h4>
         </div>
-        <div class="promo__tour">
+        <div class="content__tour">
           <h4>Обзорные экскурсии</h4>
         </div>
       </div>
     </section>
 
-    <section class="feature feature--left clearfix">
+    <section class="content content--feature content--alignleft container clearfix">
       <img src="" alt="Feature Map">
-      <h3>Найди гида свободного прямо сейчас</h3>
+      <h3 class="content__title">Найди гида свободного прямо сейчас</h3>
       <p>Приложение покажет ближайших гидов, готовых провести экскурсию прямо сейчас. Также можно запланировать экскурсию на другое удобное для вас время.</p>
     </section>
 
-    <section class="feature feature--right clearfix">
+    <section class="content content--feature content--alignright container clearfix">
       <img src="" alt="Feature Guide">
-      <h3>Выбери гида с такими же интересами, как у тебя</h3>
+      <h3 class="content__title">Выбери гида с такими же интересами, как у тебя</h3>
       <p>Мы верим, что лучшие экскурсии получаются, когда гид по-настоящему увлечен чем-то. А когда этим увлечены еще и туристы, тогда вообще бомба! </p>
     </section>
 

@@ -1,0 +1,63 @@
+.cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  &__title,
+  &__email {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: $semibold;
+    padding-bottom: 50px;
+  }
+
+  &__email {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: rgba($black, .4);
+    }
+  }
+
+  &__input {
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(#DCE1E9, .6);
+
+    input, button {
+      display: block;
+      float: left;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      font-family: $fontfamily;
+    }
+
+    input {
+      width: 65%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      width: 35%;
+      background: $gradient;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .95;
+      }
+    }
+  }
+}

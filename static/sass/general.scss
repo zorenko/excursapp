@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -8,8 +11,12 @@
   clear: both;
 }
 
+.container {
+  padding: 0 3%;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $fontfamily;
   margin: 0;
   padding: 0;
 }

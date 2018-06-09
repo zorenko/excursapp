@@ -1,0 +1,42 @@
+.content {
+  margin-bottom: 140px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: $semibold;
+    margin-bottom: 40px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 200px;
+    margin: 0 15px;
+    background: lightgrey;
+
+    h4 {
+      font-size: 18px;
+      font-weight: $semibold;
+      color: $white;
+    }
+  }
+
+  &--feature {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+  }
+}

@@ -1,6 +1,15 @@
 .header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   a {
+    display: block;
     color: $black;
+    padding: 10px 15px;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   li {
@@ -12,15 +21,17 @@
   &__logo {
     display: block;
     float: left;
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 18px;
+    padding-left: 0 !important;
+
   }
 
   &__nav {
     float: right;
 
     a {
-      font-weight: 500;
+      font-weight: $semibold;
       font-size: 14px;
     }
   }
