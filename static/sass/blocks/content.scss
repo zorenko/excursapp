@@ -4,7 +4,8 @@
   &__title {
     font-size: 20px;
     font-weight: $semibold;
-    margin-bottom: 40px;
+    line-height: 1.4;
+    margin-bottom: 30px;
   }
 
   &__row {
@@ -25,18 +26,90 @@
     width: 320px;
     height: 200px;
     margin: 0 15px;
-    background: lightgrey;
+
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
 
     h4 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: $semibold;
       color: $white;
+      text-align: center;
+      letter-spacing: .15px;
+      line-height: 1.4;
+      padding: 15px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: $gray-text;
+    }
+
+    &--private {
+      background-image: url("../img/landing_tour-private.jpg");
+    }
+    &--authors {
+      background-image: url("../img/landing_tour-authors.jpg");
+    }
+    &--locals {
+      background-image: url("../img/landing_tour-locals.jpg");
+    }
+    &--sightseeing {
+      background-image: url("../img/landing_tour-sightseeing.jpg");
+    }
+    &--gastro {
+      background-image: url("../img/landing_tour-gastro.jpg");
+    }
+    &--museum {
+      background-image: url("../img/landing_tour-museum.jpg");
+    }
+    &--nightlife {
+      background-image: url("../img/landing_tour-nightlife.jpg");
+    }
+    &--car {
+      background-image: url("../img/landing_tour-car.jpg");
+    }
+  }
+
+  &__img {
+    margin-right: 60px;
+    box-shadow: $shadow-dark;
+  }
+
+  &--promo {
+    .content__title {
+      text-align: center;
     }
   }
 
   &--feature {
-    max-width: 650px;
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 140px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .content__title {
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: $gray-text;
+    }
+  }
+
+  &--alignright {
+    flex-direction: row-reverse;
+
+    .content__img {
+      margin-right: 0;
+      margin-left: 60px;
+    }
   }
 }

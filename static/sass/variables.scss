@@ -1,12 +1,20 @@
 $black: #000;
 $white: #fff;
+
+$gray-text: rgba($black, .5);
+$gray-bg: #F9F9F9;
+
 $primary: #2755F1;
 $secondary: #00B6FF;
 
 $gradient: linear-gradient(45deg, $primary, $secondary);
 
+$shadow: 0 10px 30px rgba(#DCE1E9, .6);
+$shadow-dark: 0 10px 30px rgba($black, .2);
+
 //fonts
 $fontfamily: 'Montserrat', sans-serif;
 
+$regular: 500;
 $semibold: 600;
 $bold: 700;

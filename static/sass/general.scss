@@ -30,3 +30,16 @@ li {
 a {
   text-decoration: none;
 }
+p {
+  line-height: 1.4;
+}
+
+.link {
+  color: $black;
+  font-weight: $semibold;
+  padding: 10px 15px;
+
+  &:hover {
+    color: $primary;
+  }
+}

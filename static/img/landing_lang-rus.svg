@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>russia</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="excursapp.com" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-964.000000, -44.000000)" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(40.000000, 40.000000)">
+                <g id="russia" transform="translate(924.000000, 4.000000)">
+                    <path d="M19.9610526,4.33693155 L0,4.33693155 L0,0.352238095 C0,0.163622024 0.15411306,0.0106785714 0.34417154,0.0106785714 L19.6168811,0.0106785714 C19.8069396,0.0106785714 19.9610526,0.163622024 19.9610526,0.352238095 L19.9610526,4.33693155 Z" id="Shape" fill="#F5F5F5"></path>
+                    <path d="M19.6168421,12.9893601 L0.34417154,12.9893601 C0.15411306,12.9893601 0,12.8364167 0,12.6478006 L0,8.66314583 L19.9610136,8.66314583 L19.9610136,12.6478006 C19.9610136,12.8364554 19.8069006,12.9893601 19.6168421,12.9893601 Z" id="Shape" fill="#FF4B55"></path>
+                    <rect id="Rectangle-path" fill="#41479B" x="0" y="4.33685417" width="19.9610136" height="4.32598214"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

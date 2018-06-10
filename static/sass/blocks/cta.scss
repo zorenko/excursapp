@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding: 120px 0 160px;
 
   &__title,
   &__email {
@@ -15,22 +14,22 @@
   }
 
   &__title {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: $semibold;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   &__email {
     p {
       font-weight: 400;
-      font-size: 16px;
-      color: rgba($black, .4);
+      font-size: 14px;
+      color: $gray-text;
     }
   }
 
   &__input {
-    margin-bottom: 40px;
-    box-shadow: 0 10px 30px rgba(#DCE1E9, .6);
+    margin-bottom: 30px;
+    box-shadow: $shadow;
 
     input, button {
       display: block;
@@ -58,6 +57,16 @@
       &:hover {
         opacity: .95;
       }
+    }
+  }
+
+  &--second {
+    background: $gray-bg;
+    padding: 80px 0;
+
+    .cta__title {
+      font-size: 28px;
+      padding-bottom: 30px;
     }
   }
 }
