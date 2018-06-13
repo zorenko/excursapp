@@ -105,29 +105,30 @@ p {
     font-weight: 400;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5); }
-  .cta__input {
+  .cta__form {
     margin-bottom: 30px;
     -webkit-box-shadow: 0 10px 30px rgba(220, 225, 233, 0.6);
     box-shadow: 0 10px 30px rgba(220, 225, 233, 0.6); }
-    .cta__input input, .cta__input button {
+    .cta__form .cta__input,
+    .cta__form .cta__button {
       display: block;
       float: left;
       border: none;
       padding: 10px 15px;
       font-size: 16px;
       font-family: "Montserrat", sans-serif; }
-    .cta__input input {
+    .cta__form .cta__input {
       width: 65%; }
-      .cta__input input:focus {
+      .cta__form .cta__input:focus {
         outline: none; }
-    .cta__input .cta__button {
+    .cta__form .cta__button {
       width: 35%;
       background: -webkit-linear-gradient(45deg, #2755F1, #00B6FF);
       background: -o-linear-gradient(45deg, #2755F1, #00B6FF);
       background: linear-gradient(45deg, #2755F1, #00B6FF);
       color: #fff;
       cursor: pointer; }
-      .cta__input .cta__button:hover {
+      .cta__form .cta__button:hover {
         opacity: .95; }
   .cta--second {
     padding: 80px 0; }

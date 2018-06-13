@@ -27,11 +27,12 @@
     }
   }
 
-  &__input {
+  &__form {
     margin-bottom: 30px;
     box-shadow: $shadow;
 
-    input, button {
+    .cta__input,
+    .cta__button {
       display: block;
       float: left;
       border: none;
@@ -40,7 +41,7 @@
       font-family: $fontfamily;
     }
 
-    input {
+    .cta__input {
       width: 65%;
 
       &:focus {
