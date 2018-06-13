@@ -19,12 +19,10 @@
       <h1 class="cta__title">Простой способ найти гида и забронировать экскурсию</h1>
       <div class="cta__email">
         <div class="cta__input clearfix">
-          
-          <form action="cta.php" method="post">
+          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <input type="text" name="email" value="" placeholder="E-mail" required>
             <input class="cta__button" type="submit" value="Узнать о запуске">
           </form>
-
         </div>
         <p>Приложение в разработке.<br> Оставь e-mail, чтобы узнать о запуске.</p>
       </div>
@@ -96,7 +94,7 @@
       <div class="cta__email">
         <div class="cta__input clearfix">
 
-          <form action="cta.php" method="post">
+          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <input type="text" name="email" value="" placeholder="E-mail" required>
             <input class="cta__button" type="submit" value="Узнать о запуске">
           </form>

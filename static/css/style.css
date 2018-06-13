@@ -120,17 +120,16 @@ p {
       width: 65%; }
       .cta__input input:focus {
         outline: none; }
-    .cta__input button {
+    .cta__input .cta__button {
       width: 35%;
       background: -webkit-linear-gradient(45deg, #2755F1, #00B6FF);
       background: -o-linear-gradient(45deg, #2755F1, #00B6FF);
       background: linear-gradient(45deg, #2755F1, #00B6FF);
       color: #fff;
       cursor: pointer; }
-      .cta__input button:hover {
+      .cta__input .cta__button:hover {
         opacity: .95; }
   .cta--second {
-    background: #F9F9F9;
     padding: 80px 0; }
     .cta--second .cta__title {
       font-size: 28px;
@@ -147,9 +146,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-negative: 1;
     flex-shrink: 1;
     margin-bottom: 30px; }
@@ -251,7 +250,7 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 0;
   font-size: 14px; }
   .footer .link {
     font-weight: 500;
