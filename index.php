@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
+
+    <?php
+      // define variables and set to empty values
+      $emailErr = "";
+      $email = "";
+
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["email"])) {
+          $emailErr = "Email is required";
+        } else {
+          $email = test_input($_POST["email"]);
+          // check if e-mail address is well-formed
+          if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "Invalid email format";
+          }
+        }
+      }
+
+      function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+      }
+    ?>
+
     <header class="header container clearfix">
       <a href="#" class="header__logo link">excursapp</a>
       <ul class="header__nav">
@@ -19,8 +45,9 @@
       <h1 class="cta__title">Простой способ найти гида и забронировать экскурсию</h1>
       <div class="cta__email">
 
-        <form class="cta__form clearfix" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-          <input class="cta__input" type="text" name="email" value="" placeholder="E-mail" required>
+        <form class="cta__form clearfix" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+          <input class="cta__input" type="text" name="email" value="<?php echo $email;?>" placeholder="E-mail" required>
+          <span class="error"><?php echo $emailErr;?></span>
           <input class="cta__button" type="submit" value="Узнать о запуске">
         </form>
 
@@ -92,16 +119,22 @@
     <section class="cta cta--second clearfix">
       <h2 class="cta__title">Подпишись на наши новости</h2>
       <div class="cta__email">
-        <form class="cta__form clearfix" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-          <input class="cta__input" type="text" name="email" value="" placeholder="E-mail" required>
+
+        <form class="cta__form clearfix" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+          <input class="cta__input" type="text" name="email" value="<?php echo $email;?>" placeholder="E-mail" required>
+          <span class="error"><?php echo $emailErr;?></span>
           <input class="cta__button" type="submit" value="Узнать о запуске">
         </form>
+
       </div>
     </section>
 
     <section class="footer" id="contacts">
       По всем вопросам: <a class="link" href="mailto:info@excursapp.com">info@excursapp.com</a>
     </section>
+
+
+
 
     <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45841890 = new Ya.Metrika({ id:45841890, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45841890" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   </body>
